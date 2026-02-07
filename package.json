@@ -24,7 +24,8 @@
   "dependencies": {
     "asciify-image": "^0.1.10",
     "minimist": "^1.2.5",
-    "playwright": "1.59.0-alpha-1770426101000"
+    "playwright": "1.59.0-alpha-1770426101000",
+    "terminal-image": "^4.2.0"
   },
   "bin": {
     "playwright-cli": "playwright-cli.js"

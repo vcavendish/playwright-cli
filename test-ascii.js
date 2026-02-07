@@ -5,7 +5,7 @@
  * Usage: node test-ascii.js [url]
  */
 
-const { renderToAscii, printAscii } = require('./lib/ascii-renderer');
+const { renderToAscii, renderHighQuality, printAscii } = require('./lib/ascii-renderer');
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
@@ -25,11 +25,11 @@ async function testWithScreenshot(url = 'https://example.com') {
     
     console.log('📸 Screenshot captured, converting to ASCII...\n');
     
-    // Render to ASCII
+    // Render to ASCII with color
     await printAscii(screenshotPath, {
-      width: 100,
+      width: 120,
       color: true,
-      fit: 'box'
+      fit: 'width'
     });
     
     // Cleanup
