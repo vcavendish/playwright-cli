@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 
+// Browsh patches applied via: node scripts/patch-browsh.js
+// Source of truth: vcavendish/playwright feature/browsh-browser-backend
+
 const { program } = require('playwright/lib/mcp/terminal/program');
 const packageLocation = require.resolve('./package.json');
 program(packageLocation).catch(e => {

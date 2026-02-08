@@ -15,7 +15,9 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "link-dev": "npm link C:/Source/playwright/packages/playwright",
+    "build-playwright": "cd C:/Source/playwright && npm run build"
   },
   "devDependencies": {
     "@playwright/test": "1.59.0-alpha-1770426101000",
@@ -24,10 +26,13 @@
   "dependencies": {
     "asciify-image": "^0.1.10",
     "minimist": "^1.2.5",
-    "playwright": "1.59.0-alpha-1770426101000",
+    "playwright": "^1.59.0-alpha-1770426101000",
+    "selenium-webdriver": "^4.40.0",
+    "sharp": "^0.34.5",
     "terminal-image": "^4.2.0"
   },
   "bin": {
-    "playwright-cli": "playwright-cli.js"
+    "playwright-cli": "playwright-cli.js",
+    "playwright-browsh": "playwright-browsh.js"
   }
 }
