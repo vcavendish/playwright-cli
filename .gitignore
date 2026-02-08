@@ -2,3 +2,17 @@ node_modules/
 .vscode/
 /test-results/
 /.playwright-cli/
+
+# Experimental/scratch files
+debug.log
+browsh-output.txt
+demo-*.js
+demo-*.png
+temp-*.js
+test-*.js
+test-*.cjs
+selenium-*.js
+playwright-browsh.js
+playwright-with-browsh.js
+firefox-example.yml
+lib/browsh-renderer.js
